@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bong's Stocks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</head>
+<body>
+<form id="add-ticker-form">
+    <input type="text" id="new-ticker" placeholder="Add Ticker" required>
+    <button type="submit">Add</button>
+</form>
+<p id="timer">Next update in <span id="counter"></span> seconds.</p>
+<div id="ticker-grid"></div>
+</body>
+</html>
